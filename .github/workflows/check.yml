@@ -27,3 +27,5 @@ jobs:
 
       - name: Check backend imports
         run: python -c "from backend.api.main import app; print(app.title)"
+      - name: Run API tests
+        run: python -m pytest -q
